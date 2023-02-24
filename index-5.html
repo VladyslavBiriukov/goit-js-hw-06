@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            margin: auto;
+        }
+#name-input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  width: 300px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#name-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+#name-output {
+  font-size: 40px;
+  color: #4860f9;
+}
+    </style>
+</head>
+<body>
+    <input type="text" id="name-input" placeholder="Please enter your name" />
+    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+    <script src="./js/task-5.js" type="module"></script>
+</body>
+</html>
