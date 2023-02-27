@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #F5F5F5;
+}
+
+.widget {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+}
+
+.widget p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.widget .color {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.widget .change-color {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1E90FF;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.widget .change-color:hover {
+  background-color: #187bcd;
+}
+    </style>
+</head>
+<body>
+    <div class="widget">
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
+    </div>
+    <script src="./js/task-9.js" type="module"></script>
+</body>
+</html>

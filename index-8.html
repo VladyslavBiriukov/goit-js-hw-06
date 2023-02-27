@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-form {
+  width: 350px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec;
+  font-size: 16px;
+}
+
+.login-form button[type="submit"] {
+  display: inline-block;
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #0055ff;
+}
+
+.login-form input:focus {
+  outline: none;
+  background-color: #d9d9d9;
+}
+
+.login-form input:invalid {
+  box-shadow: none;
+  background-color: #ffdddd;
+}
+
+.login-form input:valid {
+  background-color: #ddffdd;
+}
+    </style>
+</head>
+<body>
+    <form class="login-form">
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" />
+        </label>
+        <button type="submit">Login</button>
+    </form>
+    
+    <script src="./js/task-8.js"></script>
+</body>
+</html>

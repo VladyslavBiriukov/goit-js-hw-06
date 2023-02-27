@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #font-size-control {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#font-size-control:hover {
+  opacity: 1;
+}
+
+#font-size-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4d4d4d;
+  cursor: pointer;
+}
+
+#font-size-control::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4d4d4d;
+  cursor: pointer;
+}
+
+#text {
+  display: block;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #4d4d4d;
+}
+</style>
+</head>
+<body>
+    <input id="font-size-control" type="range" min="16" max="96" />
+    <br />
+    <span id="text">Abracadabra!</span>
+    <script src="./js/task-7.js" type="module"></script>
+</body>
+</html>
