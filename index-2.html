@@ -5,6 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #f5f5f7;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 16px;
+            color: #1c1c1e;
+        }
+    
+        #ingredients {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(28, 28, 30, 0.1);
+        }
+    
+        #ingredients li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        #ingredients li:last-child {
+            margin-bottom: 0;
+        }
+    
+        #ingredients li span {
+            flex: 1;
+        }
+    
+        #ingredients li button {
+            border: none;
+            background-color: #007aff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        #ingredients li button:hover {
+            background-color: #0061ff;
+        }
+    </style>
 </head>
 <body>
     <ul id="ingredients"></ul>
