@@ -6,7 +6,7 @@ function onInputBlur() {
     const valueLength = inputEl.value.length;
     const dataLength = Number(inputEl.dataset.length);
 
-    if (valueLength >= dataLength) {
+    if (valueLength === dataLength) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
   } else {
